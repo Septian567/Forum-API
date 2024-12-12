@@ -19,7 +19,6 @@ jobs:
           POSTGRES_PASSWORD: Lalulilalala27
           POSTGRES_DB: forum_api_test
         options: >-
-          --timezone=UTC
           --health-cmd="pg_isready -U postgres -d forum_api_test"
           --health-interval=10s
           --health-timeout=5s
