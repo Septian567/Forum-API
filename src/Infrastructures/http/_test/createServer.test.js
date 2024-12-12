@@ -55,3 +55,11 @@ describe("when GET /", () => {
     expect(responseJson.value).toEqual("Hello world!");
   });
 });
+
+// // intentionally failed test
+// describe('Intentional Failure', () => {
+//   it('should fail intentionally', async () => {
+//       const res = await request(app).get('/fail');
+//       expect(res.statusCode).toBe(500); // Menjamin kegagalan terjadi
+//   });
+// });
