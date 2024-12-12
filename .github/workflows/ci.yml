@@ -52,6 +52,10 @@ jobs:
             sleep 1
           done
 
+      - name: Set timezone
+        run: |
+          sudo timedatectl set-timezone Asia/Jakarta
+
       - name: Run database migrations
         run: npm run migrate:test
 
